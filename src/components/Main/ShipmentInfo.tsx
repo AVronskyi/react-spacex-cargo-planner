@@ -9,7 +9,6 @@ interface Company {
 }
 
 type Props = {
-  isSelectedCompany: boolean;
   company: Company;
 }
 

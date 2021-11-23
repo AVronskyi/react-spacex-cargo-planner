@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3000"
+const BASE_URL = "https://AVronskyi.github.io/react-spacex-cargo-planner"
 
 export const request = (url) => {
   return fetch(`${BASE_URL}${url}`)

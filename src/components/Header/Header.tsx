@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { NavLink } from 'react-router-dom';
 import { CargoContext } from '../../Context/CargoContext';
 import './Header.scss'
 import { getShipments } from '../../api/api'
@@ -19,7 +18,7 @@ export const Header: React.FC<{}> = () => {
   return (
     <header className="header">
       <div className="header__brand">
-        <NavLink to="/">Cargo Planner</NavLink>
+        <h1>Cargo Planner</h1>
       </div>
       
       <form action="#" className="header__search">

@@ -18,7 +18,6 @@ interface Company {
 
 export const Navigation: React.FC<{}> = () => {
   const { companies, query } = useContext(CargoContext);
-  const [isSelectedCompany, setIsSelectedCompany] = useState(false);
   const [ company, setCompany] = useState<Company>();
 
   const sortedCompanis = companies.filter((company: Company) =>
@@ -35,13 +34,11 @@ export const Navigation: React.FC<{}> = () => {
               className="companies__item"
               key={company.id}
               onClick={() => {
-                setIsSelectedCompany(!isSelectedCompany);
                 setCompany(company)
               }}
             >
               <NavLink
                 to={`/${company.id}`}
-
               >
               {company.name}
               </NavLink>
@@ -57,10 +54,8 @@ export const Navigation: React.FC<{}> = () => {
           ))}
         </Routes>
       </nav>
-      {isSelectedCompany && company && (
-        <ShipmentInfo 
-          isSelectedCompany={isSelectedCompany}
-          company={company}
+      {company && (
+        <ShipmentInfo company={company}
         />
       )}
     </div>
