@@ -1,0 +1,9 @@
+.shipment {
+  flex: 0 1 80%;
+  height: 90vh;
+  padding-left: 20px;
+  overflow-y: scroll;
+  border: 1px solid #000;
+  list-style: none;
+  overflow-y: auto;
+}

@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgb(216, 221, 221);
+
+  &__search {
+    position: relative;
+    flex: 0 0 45%;
+    transition: all 0.3s;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 5px 5px 5px 40px;
+    background-image: url(../../icons8-search.svg);
+    background-position: 14px center;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    border: 1px solid #333;
+    border-radius: 25px;
+    outline: none;
+  }
+}
